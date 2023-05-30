@@ -7,3 +7,4 @@ def uppercase(str):
             upper_word += chr(ord('A') + (ord(str[i]) - ord('a')))
         else:
             upper_word += str[i]
+    print(upper_word)
