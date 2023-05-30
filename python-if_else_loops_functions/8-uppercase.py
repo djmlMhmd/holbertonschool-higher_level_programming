@@ -6,5 +6,5 @@ def uppercase(str):
         if 97 <= ord(str[i]) <= 122:
             upper_word += chr(ord('A') + (ord(str[i]) - ord('a')))
         else:
-            upper_word += str[i]
-    print(upper_word)
+            print("{:c}".format(ord(str[i]) - 32), end="")
+    print()
