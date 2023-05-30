@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-start, end = 0, 98
 
-for num in range(start, end + 1):
+for num in range(0, 98):
 
     if num >= 0:
-        z = (format(num, '#x'))
-        print(f"{num} = {z}")
+        hexa = (format(num, '#x'))
+        print(f"{num} = {hexa}")
