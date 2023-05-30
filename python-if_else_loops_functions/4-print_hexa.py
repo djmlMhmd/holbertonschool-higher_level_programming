@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-start, end = -4, 98
+start, end = 0, 98
 
 for num in range(start, end + 1):
 
