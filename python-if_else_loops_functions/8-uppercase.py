@@ -4,5 +4,5 @@ def uppercase(str):
     upper = ""
     for i in str:
         char = chr(ord(i) - 32) if 97 <= ord(i) <= 122 else i
-        upper = upper + char
+        upper += char
     print("{}".format(upper))
