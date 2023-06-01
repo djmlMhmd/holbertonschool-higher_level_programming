@@ -14,6 +14,7 @@ else:
         print("{:d} arguments.".format(num_args))
 
 if num_args >= 1:
+    num_args = 0
     for arg in sys.argv:
         if num_args != 0:
             print("{:d}: {:s}".format(num_args, arg))
