@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
 
-args = sys.argv - 1
+args = sys.argv[1:]
 
 num_args = len(args)
 
@@ -13,6 +13,8 @@ elif num_args == 1:
 else:
         print("{:d} arguments.".format(num_args))
 
-if num_args > 1:
-    for i, arg in enumerate(args):
-        print(f"{i+1}: {arg}")
+if num_args >= 1:
+    for arg in sys.argv:
+        if num_args != 0:
+            print("{:d}: {:s}".format(num_args, arg))
+        num_args += 1
