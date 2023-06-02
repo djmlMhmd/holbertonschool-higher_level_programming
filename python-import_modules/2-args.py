@@ -1,21 +1,13 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
+    arg = "arguments"
+    delim = "."
+    if len(sys.argv) == 2:
+        arg = "argument"
+    if len(sys.argv) >= 2:
+        delim = ":"
 
-args = sys.argv[1:]
-
-num_args = len(args)
-
-if num_args == 0:
-    print("{:d} arguments.".format(num_args))
-elif num_args == 1:
-    print("{:d} argument.".format(num_args))
-else:
-    print("{:d} arguments.".format(num_args))
-
-if num_args >= 1:
-    num_args = 0
-    for arg in args:
-        if num_args != 0:
-            print("{:d}:{:s}".format(num_args, arg))
-        num_args += 1
+    print("{} {}{}".format(len(sys.argv) - 1, arg, delim))
+    for i in range(1, len(sys.argv)):
+        print("{}: {}".format(i, sys.argv[i]))
