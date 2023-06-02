@@ -15,7 +15,7 @@ else:
 
 if num_args >= 1:
     num_args = 0
-    for arg in sys.argv:
+    for arg in args:
         if num_args != 0:
-            print("{:d}: {:s}".format(num_args, arg))
+            print("{:d}:{:s}".format(num_args, arg))
         num_args += 1
