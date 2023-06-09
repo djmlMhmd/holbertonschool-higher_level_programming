@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     num = 0
     prev_value = 0
     for char in reversed(roman_string):
-        value = romain_num[char]
+        value = romain_num.get(char, 0)
         if value >= prev_value:
             num += value
         else:
