@@ -4,6 +4,6 @@
 """Define new class: """
 
 
-class Square(object):
+class Square:
     """A simple example class"""
     pass
