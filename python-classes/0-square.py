@@ -1,3 +1,9 @@
 #!/usr/bin/python3
+# 0-square.py
+# <6219@holbertonstudents.com>
+"""Define new class: """
+
+
 class Square(object):
-        pass
+    """A simple example class"""
+    pass
