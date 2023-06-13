@@ -1,18 +1,16 @@
 #!/usr/bin/python3
-"""Coordinates of a square"""
+"""Define new class:"""
 
 
 class Square:
     """
-    This class represents a square.
-    Attributes:
-        __size (int): The private size of the square.
+   Class of square
     """
     def __init__(self, size=0, position=(0, 0)):
         """
-        Initializes a square with a given size.
-        args:
-            size (int, optional): the size of the square. Defaults to 0.
+        New square with his size
+        Args :
+            size : Size of the square
         """
         self.size = size
         self.position = position
@@ -76,10 +74,10 @@ class Square:
 
     def my_print(self):
         """
-        Print a visual representation of the square.
+        Print a visual of the square.
 
         If the size is 0, it prints an empty line. Otherwise,
-        it prints a square made of '#' characters,
+        it prints a square made '#' characters,
         positioned according to the specified position.
 
         """

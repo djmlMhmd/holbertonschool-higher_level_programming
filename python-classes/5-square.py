@@ -1,26 +1,22 @@
 #!/usr/bin/python3
-"""Printing a square of a given number."""
+"""Define new class:"""
 
 
 class Square:
     """
-    This class represents a square.
-    Attributes:
-        __size (int): The private size of the square.
+    Class of square
     """
     def __init__(self, size=0):
         """
-        Initializes a square with a given size.
-        args:
-            size (int, optional): the size of the square. Defaults to 0.
+       New square with his size
+        Args :
+            size : Size of the square
         """
         self.__size = size
 
     def area(self):
         """
-        Calculates and returns the area of the square
-        Returns:
-            int: the area of the square
+        Returns : area of the square
         """
         return self.__size * self.__size
 
@@ -38,7 +34,7 @@ class Square:
         """
         Set the size of the square
         args:
-            value (int): the size value to be set
+            value : the size value to be set
         Raises:
             TypeError: if value is not an integer
             ValueError: if value is less than 0
@@ -52,7 +48,7 @@ class Square:
 
     def my_print(self):
         """
-        Print a visual representation of the square.
+        Print a visual of the square.
         If the size is 0, print nothing.
         """
         if self.__size == 0:
