@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# 5-square.py
-# 6005@holbertonstudents.com
 """Printing a square of a given number."""
 
 
