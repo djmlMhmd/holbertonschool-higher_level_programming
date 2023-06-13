@@ -19,7 +19,8 @@ class Square:
         Returns : area of the square
         """
         return self.__size * self.__size
-    
+
+    @property
     def size(self):
         """
         Get the size of the square
@@ -28,6 +29,7 @@ class Square:
         """
         return self.__size
 
+    @size.setter
     def size(self, value):
         """
         Sets size of the square.
