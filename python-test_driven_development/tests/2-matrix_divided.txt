@@ -1,0 +1,20 @@
+>>> from 2-matrix_divided import matrix_divided
+::
+>>> add_integer(2, 3)
+5
+>>> add_integer(98, 3)
+101
+>>> add_integer("School")
+Error
+
+"a must be an integer"
+
+::
+>>> add_integer(2.2, 3)
+5
+>>> add_integer(98, 3.5)
+101
+>>> add_integer("School")
+Error
+
+"b must be an integer"
