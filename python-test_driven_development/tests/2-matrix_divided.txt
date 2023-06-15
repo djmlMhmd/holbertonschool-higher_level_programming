@@ -1,23 +1,22 @@
->>> from 2-matrix_divided import matrix_divided
-::
->>> matrix_divided(4, 2)
-2
->>> matrix_divided(99, 3)
-33
->>> matrix_divided("School")
-Error
->>> matrix_divided(0)
-"division by zero"
+    >>> from 2-matrix_divided import matrix_divided
+    ::
+    >>> matrix_divided(4, 2)
+    2
+    >>> matrix_divided(99, 3)
+    33
+    >>> matrix_divided("School")
+    Error
+    >>> matrix_divided(0)
+    "division by zero"
 
-"matrix must be a matrix (list of lists) of integers/floats"
+    "matrix must be a matrix (list of lists) of integers/floats"
 
-::
->>> matrix_divided(10, 2.5)
-4
->>> matrix_divided(99, 3.5)
-28
->>> matrix_divided("School")
-Error
->>> matrix = div
-"Each row of the matrix must have the same size"
-""
+    ::
+    >>> matrix_divided(10, 2.5)
+    4
+    >>> matrix_divided(99, 3.5)
+    28
+    >>> matrix_divided("School")
+    Error
+    >>> matrix = div
+    "Each row of the matrix must have the same size"
