@@ -1,0 +1,12 @@
+>>> from 5-text_indentation import text_indentation
+::
+>>> text_indentation("First_Name")
+"first_name must be a string"
+>>> text_indentation(0)
+Error
+
+::
+>>> text_indentation(Last_Name)
+"last_name must be a string"
+>>> text_indentation(99, 3)
+Error
