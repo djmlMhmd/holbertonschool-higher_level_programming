@@ -1,0 +1,12 @@
+>>> from 4-print_square import print_square
+::
+>>> print_square("First_Name")
+"first_name must be a string"
+>>> print_square(0)
+Error
+
+::
+>>> print_square(Last_Name)
+"last_name must be a string"
+>>> print_square(99, 3.5)
+Error
