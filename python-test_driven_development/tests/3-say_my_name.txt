@@ -1,0 +1,14 @@
+>>> from 3-say_my_name import say_my_name
+::
+>>> say_my_name("First_Name")
+"first_name must be a string"
+>>> say_my_name(0)
+Error
+
+::
+>>> say_my_name(Last_Name)
+"last_name must be a string"
+>>> say_my_name(99, 3.5)
+Error
+
+
