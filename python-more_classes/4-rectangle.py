@@ -83,7 +83,7 @@ class Rectangle:
         Calculates and returns the perimeter of the rectangle.
         """
         return 2 * (self.__width + self.__height)
-    
+
     def __str__(self):
         """
         print the rectangle with the character #
@@ -94,7 +94,7 @@ class Rectangle:
         for i in range(self.height):
             rectangle_str += ("#" * self.width) + "\n"
         return rectangle_str[:-1]
-    
+
     def __repr__(self):
         """
         Returns: returns a string representation rectangle
