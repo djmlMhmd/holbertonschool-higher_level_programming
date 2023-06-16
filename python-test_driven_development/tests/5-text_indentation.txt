@@ -1,12 +1,24 @@
->>> from 5-text_indentation import text_indentation
-::
->>> text_indentation("First_Name")
-"first_name must be a string"
->>> text_indentation(0)
-Error
+The 5-text_indentation module
+=============================
 
-::
->>> text_indentation(Last_Name)
-"last_name must be a string"
->>> text_indentation(99, 3)
-Error
+Using text_indentation
+----------------------
+
+First import text_indentation from the 5-text_indentation module:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now use it:
+
+    >>> text_indentation("Lorem ipsum dolor sit amet. Quonam modo?")
+    Lorem ipsum dolor sit amet.
+    <BLANKLINE>
+    Quonam modo?
+
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'

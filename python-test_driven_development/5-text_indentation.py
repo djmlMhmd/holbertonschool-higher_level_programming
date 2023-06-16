@@ -1,17 +1,30 @@
 #!/usr/bin/python3
-def text_indentation(text):
-    if not isinstance (text, str):
-        raise TypeError("text must be a string")
-    punctuation_marks = ['.', '?', ':']
-    lines = []
-    result = ''
+"""Print a text with 2 new lines after each
+of these characters: ., ? and :
+    Args:
+        text (string): text to indent
+"""
 
-    for char in text:
-        result += char
-        if char in punctuation_marks:
-            lines.append(result.strip())
-            result = ''
-    lines.append(result.strip())
-    for line in lines:
-        print(line)
-        print()
+
+def text_indentation(text):
+    """Function print a text with 2 new lines after each
+    of these characters: ., ? and :
+    """
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
+    separators = [".", "?", ":"]
+    result = ""
+    new_line = True
+
+    for i in text:
+        if new_line and i == " ":
+            continue
+        result += i
+        if i in separators:
+            result += "\n\n"
+            new_line = True
+        else:
+            new_line = False
+
+    print(result.strip(), end="")

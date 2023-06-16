@@ -33,4 +33,3 @@ Now use it:
 
     >>> add_integer("Holbies", 3.2)
     TypeError('a must be an integer')
-    
