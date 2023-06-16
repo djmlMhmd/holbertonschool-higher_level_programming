@@ -11,6 +11,8 @@ class Rectangle:
         width (int): The width of the rectangle.
         height (int): The height of the rectangle.
         """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
         Initialize  rectangle instance with optional width and height.
@@ -84,7 +86,7 @@ class Rectangle:
         """
         if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (self.__width + self.__height)
+        return (self.__width + self.__height) * 2
     
     def __str__(self):
         """
