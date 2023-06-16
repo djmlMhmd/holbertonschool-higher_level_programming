@@ -6,11 +6,11 @@ Class that represents a rectangle.
 
 class Rectangle:
     """
-        Representing a rectangle.
-        Attributes:
-        width (int): The width of the rectangle.
-        height (int): The height of the rectangle.
-        """
+    Representing a rectangle.
+    """
+    number_of_instances = 0
+    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """
         Initialize  rectangle instance with optional width and height.
@@ -70,8 +70,7 @@ class Rectangle:
             raise TypeError('height must be an integer')
         elif value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value
 
     def area(self):
         """
@@ -83,6 +82,8 @@ class Rectangle:
         """
         Calculates and returns the perimeter of the rectangle.
         """
+        if self.width == 0 or self.height == 0:
+            return 0
         return 2 * (self.__width + self.__height)
     
     def __str__(self):
