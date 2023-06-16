@@ -100,4 +100,3 @@ class Rectangle:
         Returns: returns a string representation rectangle
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
-    
