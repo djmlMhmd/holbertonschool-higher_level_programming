@@ -1,18 +1,31 @@
 #!/usr/bin/python3
-"""Module to find the max integer
+"""Unittest for max_integer([..])
 """
+import unittest
+max_integer = __import__('6-max_integer').max_integer
 
 
-def max_integer(list=[]):
-    """Function to find and return the max integer
-        If the list is empty,returns None
+class TestMaxInteger(unittest.TestCase):
+    """Class for unittest with :
+    - Module that test correct input
+    - Module that test empty list
+    - Module that test types input
     """
-    if len(list) == 0:
-        return None
-    result = list[0]
-    i = 1
-    while i < len(list):
-        if list[i] > result:
-            result = list[i]
-        i += 1
-    return result
+    def test_area(self):
+        self.assertAlmostEqual(max_integer([1, 2, 3, 4]), 4)
+        self.assertAlmostEqual(max_integer([-1, -2, -4, -3]), -1)
+        self.assertAlmostEqual(max_integer([-1, 3, -4, 2]), 3)
+        self.assertAlmostEqual(max_integer([1, 5.4, 4, -2]), 5.4)
+        self.assertAlmostEqual(max_integer([2]), 2)
+        self.assertAlmostEqual(max_integer([-5]), -5)
+        self.assertAlmostEqual(max_integer([1, 1]), 1)
+
+    def test_empty(self):
+        self.assertIsNone(max_integer(), None)
+
+    def test_types(self):
+        self.assertRaises(TypeError, max_integer, ["str", 2, 3])
+        self.assertRaises(TypeError, max_integer, [True, "str", 3])
+        self.assertRaises(TypeError, max_integer, False)
+        self.assertAlmostEqual(max_integer([False, True, 3]), 3)
+        self.assertAlmostEqual(max_integer("higher ASCII value is : v"), "v")
