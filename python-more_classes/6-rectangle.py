@@ -87,7 +87,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return (self.__width + self.__height) * 2
-    
+
     def __str__(self):
         """
         print the rectangle with the character #
@@ -98,13 +98,13 @@ class Rectangle:
         for i in range(self.height):
             rectangle_str += ("#" * self.width) + "\n"
         return rectangle_str[:-1]
-    
+
     def __repr__(self):
         """
         Returns: returns a string representation rectangle
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
-    
+
     def __del__(self):
         """
         Print the message, when an instance of Rectangle is deleted
