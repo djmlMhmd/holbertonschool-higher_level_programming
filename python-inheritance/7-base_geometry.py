@@ -2,7 +2,7 @@
 """Create class BaseGeometry"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """Class BaseGeometry"""
     def area(self):
         """Raise an Exception with a message"""
