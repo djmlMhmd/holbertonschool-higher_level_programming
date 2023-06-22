@@ -1,15 +1,9 @@
 #!/usr/bin/python3
+"""List"""
 
-"""
-class MyList
-"""
 
 class MyList(list):
-    """
-    A custom list class.
-    """
+    """list and sorted list"""
+
     def print_sorted(self):
-        """
-        Print the list in sorted order.
-        """
         print(sorted(self))
