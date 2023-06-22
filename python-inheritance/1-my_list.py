@@ -13,4 +13,4 @@ class MyList(list):
         Print the list in sorted order.
         """
         sort = sorted(self)
-        print(self)
+        print(sort)
