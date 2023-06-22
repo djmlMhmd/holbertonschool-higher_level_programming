@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Create class BaseGeometry"""
+
+
 class BaseGeometry:
     def area(self):
         raise NotImplementedError("area() is not implemented")
@@ -10,6 +13,12 @@ class BaseGeometry:
             raise ValueError("<name> must be greater than 0")
 
 class Rectangle(BaseGeometry):
+    """Class Rectangle, subclass of BaseGeometry
+
+    comments:
+        width (int): width of the rectangle
+        height (int): height of the rectangle
+    """
     def __init__(self, width, height):
         super().__init__()
         self.width = 0
