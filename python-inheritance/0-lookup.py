@@ -2,6 +2,7 @@
 """
 Function that return the list
 """
+
 def lookup(obj):
     """
     Returns: the list of available attributes
