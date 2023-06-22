@@ -20,10 +20,9 @@ class Rectangle(BaseGeometry):
         height (int): height of the rectangle
     """
     def __init__(self, width, height):
+        """Using BaseGeometry(superclass) function"""
         super().__init__()
-        self.width = 0
-        self.height = 0
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
         self.integer_validator("width", width)
         self.integer_validator("height", height)
