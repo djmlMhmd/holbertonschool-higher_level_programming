@@ -65,3 +65,8 @@ class Rectangle(Base):
     def area(self):
         "Function that return area value"
         return self.width * self.height
+
+    def display(self):
+        """Function use str method"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+    
