@@ -95,7 +95,7 @@ class Rectangle(Base):
             self.x = args[3]
         if len(args) >= 5:
             self.y = args[4]
-
-        for key, value in kwargs.items():
+        else:
+            for key, value in kwargs.items():
                 """assigns a value to an object attribute"""
-        setattr(self, key, value)
+                setattr(self, key, value)
