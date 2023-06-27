@@ -98,4 +98,4 @@ class Rectangle(Base):
 
         for key, value in kwargs.items():
                 """assigns a value to an object attribute"""
-        setattr(key, value, args)
+        setattr(self, value, key)
