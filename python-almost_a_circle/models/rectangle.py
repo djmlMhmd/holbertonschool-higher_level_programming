@@ -97,4 +97,14 @@ class Rectangle(Base):
             self.y = args[4]
         else:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                """assigns a value to an object attribute"""
+        if key == "id":
+            self.id = value
+        elif key == "width":
+            self.width = value
+        elif key == "height":
+            self.height = value
+        elif key == "x":
+            self.x = value
+        elif key == "y":
+            self.y = value
