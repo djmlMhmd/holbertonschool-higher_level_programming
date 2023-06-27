@@ -76,7 +76,7 @@ class Rectangle(Base):
         for _ in range(self.y):
             print()
         for _ in range(self.height):
-            print("" * self.x + "#" * self.width + "\n", end="")
+            print(" " * self.x + "#" * self.width + "\n", end="")
 
     def __str__(self):
         """Function use str method"""
