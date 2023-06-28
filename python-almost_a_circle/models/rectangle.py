@@ -99,3 +99,13 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 """assigns a value to an object attribute"""
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Dictionary representing rectangle"""
+        return {
+            'id': id.self, 
+            'width': self.width,
+            'height': self.height,
+            'x': self.y,
+            'y': self.x
+            }
