@@ -29,16 +29,9 @@ class Base:
         if list_objs is None:
             json.dump([], json_file)
 
-    @staticmethod
-    def from_json_string(json_string):
-        """Converts JSON string to list of dictionaries"""
-        if json_string is None or len(json_string) == 0:
-            return []
-        return json.loads(json_string)
-    
-        if type(list_objs[0]).__name__ == "Rectangle":
-            new_dict = [item.to_dictionary() for item in list_objs]
-            json_string = cls.to_json_string(new_dict)
-            json.dump(new_dict, json_file)
-
-        json_file.close()
+    def save_to_file(cls, list_objs):
+        """Writes JSON string representation of list_objs to file"""
+        filename = cls.__name__ + ".json"
+        json_string = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        with open(filename, 'w') as file:
+            file.write(json_string)
