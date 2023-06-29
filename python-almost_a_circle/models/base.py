@@ -48,5 +48,5 @@ class Base:
             dummy = cls(1)
         else:
             dummy = cls()
-            dummy.update(**dictionary)
-            return dummy
+        dummy.update(**dictionary)
+        return dummy
