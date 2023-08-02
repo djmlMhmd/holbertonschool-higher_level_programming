@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Script that takes in the name of a state as an argument
 and lists all cities of that state, using the database hbtn_0e_4_usa"""
 
@@ -22,7 +23,7 @@ if __name__ == "__main__":
         WHERE states.name LIKE BINARY %s
         ORDER BY cities.id
         """, (sys.argv[4],))
-    
+
     rows = cursor.fetchall()
     city_names = []
     for row in rows:
